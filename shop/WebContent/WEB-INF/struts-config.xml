@@ -7,8 +7,14 @@
 
 <struts-config>
  <action-mappings>
+ <action path="/control/center/main" forward="/WEB-INF/page/controlcenter/default.jsp" />
+ <action path="/control/center/top" forward="/WEB-INF/page/controlcenter/top.jsp" />
+ <action path="/control/center/left" forward="/WEB-INF/page/controlcenter/menu.jsp" />
+ <action path="/control/center/right" forward="/WEB-INF/page/controlcenter/right.jsp" />
+ <action path="/control/center/end" forward="/WEB-INF/page/controlcenter/end.jsp" />
+ 
  <action path="/control/product/type/list">
- <forward name="list" path="test.jsp"></forward>
+ <forward name="list" path="/WEB-INF/page/product/producttypelist.jsp"></forward>
  </action>
  </action-mappings>
 <controller>
